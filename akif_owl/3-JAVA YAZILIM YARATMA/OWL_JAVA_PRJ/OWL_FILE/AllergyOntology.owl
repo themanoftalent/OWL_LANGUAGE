@@ -1,0 +1,493 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.aydin.edu.tr/2016/ontologies"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.aydin.edu.tr/2016/ontologies">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="/Allergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FoodAdditives"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Product"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/ChooseProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasAllergy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasEGGALL_FoodAdditive"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasFISHALL_FoodAdditive"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasGLUTENALL_FoodAdditive"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasLACTOSEALL_FoodAdditive"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alginic_Acid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ascorbic_Acid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Casein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EAN_00001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EAN_00002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EAN_00003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EAN_00004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Egg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gluten"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lactose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nisin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phospore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sodium_Ascorbite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soy_Lecitin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TC_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TC_002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TC_003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TC_004"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="/FoodAdditives"/>
+        <NamedIndividual IRI="#Alginic_Acid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/FoodAdditives"/>
+        <NamedIndividual IRI="#Ascorbic_Acid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/FoodAdditives"/>
+        <NamedIndividual IRI="#Casein"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Product"/>
+        <NamedIndividual IRI="#EAN_00001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Product"/>
+        <NamedIndividual IRI="#EAN_00002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Product"/>
+        <NamedIndividual IRI="#EAN_00003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Product"/>
+        <NamedIndividual IRI="#EAN_00004"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Allergy"/>
+        <NamedIndividual IRI="#Egg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Allergy"/>
+        <NamedIndividual IRI="#Fish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Allergy"/>
+        <NamedIndividual IRI="#Gluten"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Allergy"/>
+        <NamedIndividual IRI="#Lactose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/FoodAdditives"/>
+        <NamedIndividual IRI="#Nisin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/FoodAdditives"/>
+        <NamedIndividual IRI="#Phospore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/FoodAdditives"/>
+        <NamedIndividual IRI="#Sodium_Ascorbite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/FoodAdditives"/>
+        <NamedIndividual IRI="#Soy_Lecitin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Person"/>
+        <NamedIndividual IRI="#TC_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Person"/>
+        <NamedIndividual IRI="#TC_002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Person"/>
+        <NamedIndividual IRI="#TC_003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Person"/>
+        <NamedIndividual IRI="#TC_004"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasIngredient"/>
+        <NamedIndividual IRI="#EAN_00001"/>
+        <NamedIndividual IRI="#Alginic_Acid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasIngredient"/>
+        <NamedIndividual IRI="#EAN_00002"/>
+        <NamedIndividual IRI="#Soy_Lecitin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasIngredient"/>
+        <NamedIndividual IRI="#EAN_00002"/>
+        <NamedIndividual IRI="#Phospore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasIngredient"/>
+        <NamedIndividual IRI="#EAN_00003"/>
+        <NamedIndividual IRI="#Sodium_Ascorbite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasIngredient"/>
+        <NamedIndividual IRI="#EAN_00003"/>
+        <NamedIndividual IRI="#Casein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasIngredient"/>
+        <NamedIndividual IRI="#EAN_00004"/>
+        <NamedIndividual IRI="#Ascorbic_Acid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasIngredient"/>
+        <NamedIndividual IRI="#EAN_00004"/>
+        <NamedIndividual IRI="#Soy_Lecitin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasIngredient"/>
+        <NamedIndividual IRI="#EAN_00004"/>
+        <NamedIndividual IRI="#Nisin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/ChooseProduct"/>
+        <NamedIndividual IRI="#TC_001"/>
+        <NamedIndividual IRI="#EAN_00004"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAllergy"/>
+        <NamedIndividual IRI="#TC_001"/>
+        <NamedIndividual IRI="#Lactose"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/ChooseProduct"/>
+        <NamedIndividual IRI="#TC_002"/>
+        <NamedIndividual IRI="#EAN_00003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAllergy"/>
+        <NamedIndividual IRI="#TC_002"/>
+        <NamedIndividual IRI="#Lactose"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/ChooseProduct"/>
+        <NamedIndividual IRI="#TC_003"/>
+        <NamedIndividual IRI="#EAN_00003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAllergy"/>
+        <NamedIndividual IRI="#TC_003"/>
+        <NamedIndividual IRI="#Fish"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAllergy"/>
+        <NamedIndividual IRI="#TC_003"/>
+        <NamedIndividual IRI="#Lactose"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/hasName"/>
+        <NamedIndividual IRI="#EAN_00001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Eti Kraker</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/hasName"/>
+        <NamedIndividual IRI="#EAN_00002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Ülker Damak</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/hasName"/>
+        <NamedIndividual IRI="#EAN_00003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Dardanel Ton</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/hasName"/>
+        <NamedIndividual IRI="#EAN_00004"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Eti Çikolata</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#TC_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/hasName"/>
+        <NamedIndividual IRI="#TC_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Ayşe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#TC_002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/hasName"/>
+        <NamedIndividual IRI="#TC_002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MURAT</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#TC_003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/hasName"/>
+        <NamedIndividual IRI="#TC_003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MEHMET</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/ChooseProduct"/>
+        <Class IRI="/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasAllergy"/>
+        <Class IRI="/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasEGGALL_FoodAdditive"/>
+        <Class IRI="/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasFISHALL_FoodAdditive"/>
+        <Class IRI="/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasGLUTENALL_FoodAdditive"/>
+        <Class IRI="/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasIngredient"/>
+        <Class IRI="/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasLACTOSEALL_FoodAdditive"/>
+        <Class IRI="/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/ChooseProduct"/>
+        <Class IRI="/Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasAllergy"/>
+        <Class IRI="/Allergy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasEGGALL_FoodAdditive"/>
+        <Class IRI="/Allergy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasFISHALL_FoodAdditive"/>
+        <Class IRI="/Allergy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasGLUTENALL_FoodAdditive"/>
+        <Class IRI="/Allergy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasIngredient"/>
+        <Class IRI="/FoodAdditives"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasLACTOSEALL_FoodAdditive"/>
+        <Class IRI="/Allergy"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasName"/>
+        <Class IRI="/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasName"/>
+        <Class IRI="/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="/Person"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="/Product"/>
+                <Variable IRI="urn:swrl#u"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/ChooseProduct"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#u"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasAllergy"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Fish"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasIngredient"/>
+                <Variable IRI="urn:swrl#u"/>
+                <NamedIndividual IRI="#Sodium_Ascorbite"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasFISHALL_FoodAdditive"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Sodium_Ascorbite"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="/Person"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="/Product"/>
+                <Variable IRI="urn:swrl#u"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/ChooseProduct"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#u"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasAllergy"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Lactose"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasIngredient"/>
+                <Variable IRI="urn:swrl#u"/>
+                <NamedIndividual IRI="#Casein"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasLACTOSEALL_FoodAdditive"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Casein"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="/Person"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="/Product"/>
+                <Variable IRI="urn:swrl#u"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/ChooseProduct"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#u"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasAllergy"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Lactose"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasIngredient"/>
+                <Variable IRI="urn:swrl#u"/>
+                <NamedIndividual IRI="#Nisin"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/hasLACTOSEALL_FoodAdditive"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Nisin"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.10-SNAPSHOT) http://owlapi.sourceforge.net -->
+

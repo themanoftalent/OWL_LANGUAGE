@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.aydin.edu.tr/ontologies"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.aydin.edu.tr/ontologies">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#ALLERGY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CONSUMER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ONERMELER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PHYSICAL_ACTIVITY_LEVEL"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HAS_ACTIVITY_LEVEL_VALUE"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HAS_ALLERGY"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HAS_RECOMMEND"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HAS_AGE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HAS_NAME_SURNAME"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HAS_WEIGHT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BALIK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DOKTORA_GIT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FENA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GLUTEN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HIZLI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ILAC_KULLAN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LAKTOZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ORTA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YAVAS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YUMURTA"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#ALLERGY"/>
+        <NamedIndividual IRI="#BALIK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ONERMELER"/>
+        <NamedIndividual IRI="#DOKTORA_GIT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ONERMELER"/>
+        <NamedIndividual IRI="#FENA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ALLERGY"/>
+        <NamedIndividual IRI="#GLUTEN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PHYSICAL_ACTIVITY_LEVEL"/>
+        <NamedIndividual IRI="#HIZLI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ONERMELER"/>
+        <NamedIndividual IRI="#ILAC_KULLAN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ALLERGY"/>
+        <NamedIndividual IRI="#LAKTOZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PHYSICAL_ACTIVITY_LEVEL"/>
+        <NamedIndividual IRI="#ORTA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PHYSICAL_ACTIVITY_LEVEL"/>
+        <NamedIndividual IRI="#YAVAS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ALLERGY"/>
+        <NamedIndividual IRI="#YUMURTA"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HAS_ACTIVITY_LEVEL_VALUE"/>
+        <Class IRI="#CONSUMER"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HAS_ALLERGY"/>
+        <Class IRI="#CONSUMER"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HAS_RECOMMEND"/>
+        <Class IRI="#CONSUMER"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HAS_ACTIVITY_LEVEL_VALUE"/>
+        <Class IRI="#PHYSICAL_ACTIVITY_LEVEL"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HAS_ALLERGY"/>
+        <Class IRI="#ALLERGY"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HAS_RECOMMEND"/>
+        <Class IRI="#ONERMELER"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#HAS_AGE"/>
+        <Class IRI="#CONSUMER"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#HAS_NAME_SURNAME"/>
+        <Class IRI="#CONSUMER"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#HAS_WEIGHT"/>
+        <Class IRI="#CONSUMER"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#HAS_AGE"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#HAS_NAME_SURNAME"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#HAS_WEIGHT"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#CONSUMER"/>
+                <Variable IRI="urn:swrl#C"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#HAS_ALLERGY"/>
+                <Variable IRI="urn:swrl#C"/>
+                <NamedIndividual IRI="#BALIK"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HAS_AGE"/>
+                <Variable IRI="urn:swrl#C"/>
+                <Variable IRI="urn:swrl#A"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="urn:swrl#A"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#HAS_RECOMMEND"/>
+                <Variable IRI="urn:swrl#C"/>
+                <NamedIndividual IRI="#FENA"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#CONSUMER"/>
+                <Variable IRI="urn:swrl#C"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#HAS_ALLERGY"/>
+                <Variable IRI="urn:swrl#C"/>
+                <NamedIndividual IRI="#BALIK"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HAS_AGE"/>
+                <Variable IRI="urn:swrl#C"/>
+                <Variable IRI="urn:swrl#A"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="urn:swrl#A"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#HAS_RECOMMEND"/>
+                <Variable IRI="urn:swrl#C"/>
+                <NamedIndividual IRI="#DOKTORA_GIT"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.3) http://owlapi.sourceforge.net -->
+
